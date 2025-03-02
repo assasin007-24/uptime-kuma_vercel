@@ -11,6 +11,7 @@
   },
   "scripts": {
     "install-legacy": "npm install",
+    "setup": "git checkout 2.0.0-beta.1 && npm ci --production && npm run download-dist",
     "update-legacy": "npm update",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint-fix:js": "eslint --ext \".js,.vue\" --fix --ignore-path .gitignore .",
